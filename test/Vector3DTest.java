@@ -77,12 +77,12 @@ public class Vector3DTest {
         //Vector 1 normalized expected Value
         assertEquals(0.2981, vector1.normalize().getX(), 0.001);
         assertEquals(0.5962, vector1.normalize().getY(), 0.001);
-        assertEquals(0.5962, vector1.normalize().getZ(), 0.001);
+        assertEquals(0.7454, vector1.normalize().getZ(), 0.001);
 
         // Negative Vector normalized expected value
         assertEquals(-0.1182, negativeVector1.normalize().getX(), 0.001);
         assertEquals(-0.9089, negativeVector1.normalize().getY(), 0.001);
-        assertEquals(-0.9089, negativeVector1.normalize().getZ(), 0.001);
+        assertEquals(-0.3999, negativeVector1.normalize().getZ(), 0.001);
     }
 
     /**

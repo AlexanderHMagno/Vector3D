@@ -68,13 +68,14 @@ public class Vector3D {
      */
     public Vector3D normalize() throws IllegalStateException {
 
-        if(this.getMagnitude() == 0) {
+        //Magnitude can only be positive.
+        if(this.getMagnitude() <= 0) {
             throw new IllegalStateException();
         }
 
         double normalizedX = this.getX() / this.getMagnitude();
         double normalizedY = this.getY() / this.getMagnitude();
-        double normalizedZ = this.getY() / this.getMagnitude();
+        double normalizedZ = this.getZ() / this.getMagnitude();
 
         Vector3D newNormalizedVector = new Vector3D(normalizedX, normalizedY, normalizedZ);
 
